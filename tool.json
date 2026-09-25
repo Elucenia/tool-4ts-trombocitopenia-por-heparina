@@ -1,0 +1,261 @@
+{
+  "tool": {
+    "id": "4ts-trombocitopenia-por-heparina",
+    "title": "Escore 4T (trombocitopenia induzida por heparina)",
+    "short": "Probabilidade clínica de TIH",
+    "desc": "Escore 4T para trombocitopenia induzida por heparina (TIH): trombocitopenia, tempo, trombose e outras causas; probabilidade baixa, intermediária ou alta.",
+    "lead": "Estima a probabilidade pré-teste de trombocitopenia induzida por heparina em quem recebe ou recebeu heparina e decide se é preciso investigar e trocar o anticoagulante.",
+    "spec": [
+      "hematologia-e-hemoterapia",
+      "medicina-intensiva",
+      "cirurgia-cardiovascular",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "trombo",
+        "Trombocitopenia",
+        "radio",
+        {
+          "opts": {
+            "0": "Queda &lt; 30% ou nadir &lt; 10.000/µL",
+            "1": "Queda de 30% a 50% ou nadir de 10.000 a 19.000/µL",
+            "2": "Queda &gt; 50% e nadir ≥ 20.000/µL"
+          }
+        }
+      ],
+      [
+        "tempo",
+        "Tempo da queda das plaquetas",
+        "radio",
+        {
+          "opts": {
+            "0": "Queda antes do 4º dia sem exposição recente",
+            "1": "Compatível com 5º–10º dia, mas incerto; após o 10º dia; ou ≤ 1 dia com heparina há 30 a 100 dias",
+            "2": "Início claro entre o 5º e o 10º dia, ou ≤ 1 dia com heparina nos últimos 30 dias"
+          }
+        }
+      ],
+      [
+        "trombose",
+        "Trombose ou outras sequelas",
+        "radio",
+        {
+          "opts": {
+            "0": "Nenhuma",
+            "1": "Trombose progressiva ou recorrente, lesão de pele não necrótica ou trombose suspeita",
+            "2": "Trombose nova confirmada, necrose de pele ou reação sistêmica após bolus"
+          }
+        }
+      ],
+      [
+        "outras",
+        "Outras causas de plaquetopenia",
+        "radio",
+        {
+          "opts": {
+            "0": "Definida",
+            "1": "Possível",
+            "2": "Nenhuma aparente"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Escore 4T",
+      "unit": "de 8",
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixa probabilidade de TIH (0 a 3 pontos)",
+          "ASH 2018: não dosar anticorpos anti-PF4 e manter a heparina, buscando outra causa."
+        ],
+        [
+          4,
+          "mid",
+          "Probabilidade intermediária (4 a 5 pontos)",
+          "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e dosar anti-PF4."
+        ],
+        [
+          6,
+          "high",
+          "Alta probabilidade (6 a 8 pontos)",
+          "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional)."
+        ]
+      ]
+    },
+    "formula": "<p>Quatro itens, de 0 a 2 pontos cada: <strong>T</strong>rombocitopenia · <strong>T</strong>empo · <strong>T</strong>rombose · ou<strong>T</strong>ras causas. Máximo: 8.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Probabilidade",
+        "Conduta (ASH 2018)"
+      ],
+      [
+        "0–3",
+        "Baixa",
+        "Não testar; manter heparina"
+      ],
+      [
+        "4–5",
+        "Intermediária",
+        "Trocar anticoagulante e dosar anti-PF4"
+      ],
+      [
+        "6–8",
+        "Alta",
+        "Trocar anticoagulante e dosar anti-PF4"
+      ]
+    ],
+    "table_note": "No estudo de Lo, o escore baixo teve valor preditivo negativo próximo de 100%.",
+    "tips": [
+      "Conte os dias a partir do início da heparina atual (dia 0), não da internação.",
+      "O valor de 4T baixo exclui TIH com segurança; o alto não confirma: a decisão final depende do anti-PF4 e, se disponível, do teste funcional.",
+      "Na suspeita, suspenda <strong>toda</strong> heparina, inclusive lavagem de cateter; não transfunda plaquetas de rotina e não inicie varfarina até a recuperação das plaquetas.",
+      "Após cirurgia cardíaca, a plaquetopenia precoce é esperada: queda nova após o 5º dia, ou que não se recupera, é que levanta a suspeita."
+    ],
+    "sources": [
+      [
+        "Lo GK et al. Evaluation of pretest clinical score (4 T's) for the diagnosis of heparin-induced thrombocytopenia in two clinical settings. J Thromb Haemost, 2006.",
+        "https://doi.org/10.1111/j.1538-7836.2006.01787.x"
+      ],
+      [
+        "Cuker A et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv, 2018.",
+        "https://doi.org/10.1182/bloodadvances.2018024489"
+      ]
+    ],
+    "cases": [
+      [
+        "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        {
+          "trombo": "0",
+          "tempo": "0",
+          "trombose": "0",
+          "outras": "0"
+        },
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        {
+          "trombo": "1",
+          "tempo": "2",
+          "trombose": "0",
+          "outras": "1"
+        },
+        {
+          "score": 4,
+          "level": "mid"
+        }
+      ],
+      [
+        "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        {
+          "trombo": "2",
+          "tempo": "2",
+          "trombose": "2",
+          "outras": "2"
+        },
+        {
+          "score": 8,
+          "level": "high"
+        }
+      ],
+      [
+        "Corte: 2+2+0+2 = 6, alta",
+        {
+          "trombo": "2",
+          "tempo": "2",
+          "trombose": "0",
+          "outras": "2"
+        },
+        {
+          "score": 6,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 8",
+      "label": "Escore 4T",
+      "fields": [
+        [
+          "trombo",
+          "radio",
+          0
+        ],
+        [
+          "tempo",
+          "radio",
+          0
+        ],
+        [
+          "trombose",
+          "radio",
+          0
+        ],
+        [
+          "outras",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixa probabilidade de TIH (0 a 3 pontos)",
+          "ASH 2018: não dosar anticorpos anti-PF4 e manter a heparina, buscando outra causa."
+        ],
+        [
+          4,
+          "mid",
+          "Probabilidade intermediária (4 a 5 pontos)",
+          "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e dosar anti-PF4."
+        ],
+        [
+          6,
+          "high",
+          "Alta probabilidade (6 a 8 pontos)",
+          "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional)."
+        ]
+      ]
+    },
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}

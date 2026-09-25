@@ -1,0 +1,82 @@
+[
+  {
+    "label": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+    "input": {
+      "trombo": "0",
+      "tempo": "0",
+      "trombose": "0",
+      "outras": "0"
+    },
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": {
+      "trombo": "0",
+      "tempo": "0",
+      "trombose": "0",
+      "outras": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+    "input": {
+      "trombo": "1",
+      "tempo": "2",
+      "trombose": "0",
+      "outras": "1"
+    },
+    "expected": {
+      "score": 4,
+      "level": "mid"
+    },
+    "originalInput": {
+      "trombo": "1",
+      "tempo": "2",
+      "trombose": "0",
+      "outras": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+    "input": {
+      "trombo": "2",
+      "tempo": "2",
+      "trombose": "2",
+      "outras": "2"
+    },
+    "expected": {
+      "score": 8,
+      "level": "high"
+    },
+    "originalInput": {
+      "trombo": "2",
+      "tempo": "2",
+      "trombose": "2",
+      "outras": "2"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Corte: 2+2+0+2 = 6, alta",
+    "input": {
+      "trombo": "2",
+      "tempo": "2",
+      "trombose": "0",
+      "outras": "2"
+    },
+    "expected": {
+      "score": 6,
+      "level": "high"
+    },
+    "originalInput": {
+      "trombo": "2",
+      "tempo": "2",
+      "trombose": "0",
+      "outras": "2"
+    },
+    "expandedZeroOptions": []
+  }
+]
