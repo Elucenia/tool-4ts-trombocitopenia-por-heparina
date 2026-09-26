@@ -1,11 +1,11 @@
-/* tool-4ts-trombocitopenia-por-heparina · Elucenia · https://github.com/Elucenia/tool-4ts-trombocitopenia-por-heparina
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-4ts-trombocitopenia-por-heparina · ELUCENIA · https://github.com/Elucenia/tool-4ts-trombocitopenia-por-heparina
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"4ts-trombocitopenia-por-heparina","title":"Escore 4T (trombocitopenia induzida por heparina)","fields":[["trombo","Trombocitopenia","radio",{"opts":{"0":"Queda &lt; 30% ou nadir &lt; 10.000/µL","1":"Queda de 30% a 50% ou nadir de 10.000 a 19.000/µL","2":"Queda &gt; 50% e nadir ≥ 20.000/µL"}}],["tempo","Tempo da queda das plaquetas","radio",{"opts":{"0":"Queda antes do 4º dia sem exposição recente","1":"Compatível com 5º–10º dia, mas incerto; após o 10º dia; ou ≤ 1 dia com heparina há 30 a 100 dias","2":"Início claro entre o 5º e o 10º dia, ou ≤ 1 dia com heparina nos últimos 30 dias"}}],["trombose","Trombose ou outras sequelas","radio",{"opts":{"0":"Nenhuma","1":"Trombose progressiva ou recorrente, lesão de pele não necrótica ou trombose suspeita","2":"Trombose nova confirmada, necrose de pele ou reação sistêmica após bolus"}}],["outras","Outras causas de plaquetopenia","radio",{"opts":{"0":"Definida","1":"Possível","2":"Nenhuma aparente"}}]],"config":{"unit":"de 8","label":"Escore 4T","fields":[["trombo","radio",0],["tempo","radio",0],["trombose","radio",0],["outras","radio",0]],"bands":[[0,"low","Baixa probabilidade de TIH (0 a 3 pontos)","ASH 2018: não dosar anticorpos anti-PF4 e manter a heparina, buscando outra causa."],[4,"mid","Probabilidade intermediária (4 a 5 pontos)","Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e dosar anti-PF4."],[6,"high","Alta probabilidade (6 a 8 pontos)","Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional)."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
