@@ -1,0 +1,88 @@
+{
+  "id": "4ts-trombocitopenia-por-heparina",
+  "repository": "Elucenia/tool-4ts-trombocitopenia-por-heparina",
+  "branch": "main",
+  "commit": "17c92ee3eda13b8454f6d3420afe895cca379570",
+  "archiveSha256": "b31efcb0c0e7871aea81a35b17554af34c582cefc83dad2cd0b96a86153f288d",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3399,
+      "sha": "67a104d9d703d0e972de98623b33e49e0690124c",
+      "sha256": "ba434fc70f3f7b68ebd6750472f7f9ebf55b7e2d639be98cb2941ceeef810c09"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 999,
+      "sha": "1081ffc793c7fd66e7163528258a5164cd0bdc28",
+      "sha256": "a59e7183e2a746c491581b64289977169a7b91d1643323c273237f469d848192"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1483,
+      "sha": "cfe9ae63d434f03f90ab3c8dbbaa11c3059b6ee8",
+      "sha256": "598a0bb68652c1f0069b0b7f8626a8b4e66648abbf260d8fd0d4cba2974b8cc7"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1698,
+      "sha": "d57a25088dcd8da8e05e40700b2dfca39de79677",
+      "sha256": "7a5109da943387aaa1a1469c9506ad74d53b73fc0e2148da71b3fe4bfc209c41"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

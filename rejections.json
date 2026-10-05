@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field trombo",
+    "input": {
+      "tempo": "0",
+      "trombose": "0",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "trombo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field trombo",
+    "input": {
+      "trombo": "",
+      "tempo": "0",
+      "trombose": "0",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "trombo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option trombo",
+    "input": {
+      "trombo": "__ELUCENIA_INVALID_OPTION__",
+      "tempo": "0",
+      "trombose": "0",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "trombo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tempo",
+    "input": {
+      "trombo": "0",
+      "trombose": "0",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tempo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tempo",
+    "input": {
+      "trombo": "0",
+      "tempo": "",
+      "trombose": "0",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tempo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tempo",
+    "input": {
+      "trombo": "0",
+      "tempo": "__ELUCENIA_INVALID_OPTION__",
+      "trombose": "0",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tempo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field trombose",
+    "input": {
+      "trombo": "0",
+      "tempo": "0",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "trombose"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field trombose",
+    "input": {
+      "trombo": "0",
+      "tempo": "0",
+      "trombose": "",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "trombose"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option trombose",
+    "input": {
+      "trombo": "0",
+      "tempo": "0",
+      "trombose": "__ELUCENIA_INVALID_OPTION__",
+      "outras": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "trombose"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field outras",
+    "input": {
+      "trombo": "0",
+      "tempo": "0",
+      "trombose": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "outras"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field outras",
+    "input": {
+      "trombo": "0",
+      "tempo": "0",
+      "trombose": "0",
+      "outras": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "outras"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option outras",
+    "input": {
+      "trombo": "0",
+      "tempo": "0",
+      "trombose": "0",
+      "outras": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "outras"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

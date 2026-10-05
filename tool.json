@@ -5,13 +5,13 @@
     "short": "Probabilidade clínica de TIH",
     "desc": "Escore 4T para trombocitopenia induzida por heparina (TIH): trombocitopenia, tempo, trombose e outras causas; probabilidade baixa, intermediária ou alta.",
     "lead": "Estima a probabilidade pré-teste de trombocitopenia induzida por heparina em quem recebe ou recebeu heparina e decide se é preciso investigar e trocar o anticoagulante.",
+    "kind": "Escore",
     "spec": [
       "hematologia-e-hemoterapia",
       "medicina-intensiva",
       "cirurgia-cardiovascular",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "trombo",
@@ -62,60 +62,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Escore 4T",
-      "unit": "de 8",
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixa probabilidade de TIH (0 a 3 pontos)",
-          "ASH 2018: não dosar anticorpos anti-PF4 e manter a heparina, buscando outra causa."
-        ],
-        [
-          4,
-          "mid",
-          "Probabilidade intermediária (4 a 5 pontos)",
-          "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e dosar anti-PF4."
-        ],
-        [
-          6,
-          "high",
-          "Alta probabilidade (6 a 8 pontos)",
-          "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional)."
-        ]
-      ]
-    },
     "formula": "<p>Quatro itens, de 0 a 2 pontos cada: <strong>T</strong>rombocitopenia · <strong>T</strong>empo · <strong>T</strong>rombose · ou<strong>T</strong>ras causas. Máximo: 8.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Probabilidade",
-        "Conduta (ASH 2018)"
-      ],
-      [
-        "0–3",
-        "Baixa",
-        "Não testar; manter heparina"
-      ],
-      [
-        "4–5",
-        "Intermediária",
-        "Trocar anticoagulante e dosar anti-PF4"
-      ],
-      [
-        "6–8",
-        "Alta",
-        "Trocar anticoagulante e dosar anti-PF4"
-      ]
-    ],
-    "table_note": "No estudo de Lo, o escore baixo teve valor preditivo negativo próximo de 100%.",
-    "tips": [
-      "Conte os dias a partir do início da heparina atual (dia 0), não da internação.",
-      "O valor de 4T baixo exclui TIH com segurança; o alto não confirma: a decisão final depende do anti-PF4 e, se disponível, do teste funcional.",
-      "Na suspeita, suspenda <strong>toda</strong> heparina, inclusive lavagem de cateter; não transfunda plaquetas de rotina e não inicie varfarina até a recuperação das plaquetas.",
-      "Após cirurgia cardíaca, a plaquetopenia precoce é esperada: queda nova após o 5º dia, ou que não se recupera, é que levanta a suspeita."
-    ],
     "sources": [
       [
         "Lo GK et al. Evaluation of pretest clinical score (4 T's) for the diagnosis of heparin-induced thrombocytopenia in two clinical settings. J Thromb Haemost, 2006.",
@@ -180,54 +127,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 8",
-      "label": "Escore 4T",
-      "fields": [
-        [
-          "trombo",
-          "radio",
-          0
-        ],
-        [
-          "tempo",
-          "radio",
-          0
-        ],
-        [
-          "trombose",
-          "radio",
-          0
-        ],
-        [
-          "outras",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixa probabilidade de TIH (0 a 3 pontos)",
-          "ASH 2018: não dosar anticorpos anti-PF4 e manter a heparina, buscando outra causa."
-        ],
-        [
-          4,
-          "mid",
-          "Probabilidade intermediária (4 a 5 pontos)",
-          "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e dosar anti-PF4."
-        ],
-        [
-          6,
-          "high",
-          "Alta probabilidade (6 a 8 pontos)",
-          "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional)."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -236,17 +135,470 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:56:01.165Z",
+      "total": 81,
+      "passed": 81,
+      "sourceRowCount": 81,
+      "uniqueApiInputCount": 81,
+      "sourceContextCount": 81,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "292b0e341c0e4483f06da9bdd9cce95c65fbf381e78fd66ad4fa6082c8b0f156",
+        "total": 81,
+        "bankRowCount": 81,
+        "uniqueApiInputCount": 81,
+        "sourceContextCount": 81,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+            "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+          },
+          {
+            "file": "reports/review-20261003/eight-risk-independent-expectations-final26.json",
+            "sha256": "f5e7d0e09fb4dadaa01dd489cbca1ad3ee8e847771b8409947f3fc43ad7f4a82"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+          "sha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce"
+        },
+        "packagingRequirement": "Copy this score-only complete bank into fresh frozen26 packages only after metadata/source composition and independent peer."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 81,
+        "uniqueApiInputs": 81,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+          "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+        }
+      },
+      "scope": "Exact weighted integer sum of 81 exhaustive represented caller-selected point/binary tuples for 4ts-trombocitopenia-por-heparina. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+      "sources": [
+        {
+          "id": "4ts-trombocitopenia-por-heparina",
+          "edition": "Lo2006 Table1 main version and HGH/GW footnote differences; not one universal identical table",
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1538-7836.2006.01787.x",
+          "doi": "10.1111/j.1538-7836.2006.01787.x",
+          "access": "Original publisher full-text HTML directly opened/read. Main Table1 and footnotes accessible; attempted current journal PDF returned403. No original visual PDF claimed.",
+          "readScope": [
+            "Patients/study design",
+            "Clinical model,Table1 and complete footnotes",
+            "Results/Discussion setting-dependent predictive values"
+          ],
+          "notVerified": [
+            "Raw day/plateletcount classification",
+            "Setting-specific positive predictive value and HIT diagnosis/treatment",
+            "Professional/instrument rights or complete guideline conformity"
+          ],
+          "sourceComponent": "Selected integer point sum only; detailed clinical cohort/band facts remain in the frozen original source review."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+      "evidenceSha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce",
+      "originalEvidence": {
+        "file": "reports/review-20261003/eight-risk-independent-source-check-final26.json",
+        "sha256": "b816fcbdbc88a75d30dba462f1d7a1ecfacb49b3d5487709ee9d1bd470c6d832"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred.",
+        "recordedAt": "2026-10-04T18:58:09.148Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred."
+        },
+        "peer": {
+          "file": "reports/review-20261003/eight-point-total-source-evidence-independent-peer-final26-r2.json",
+          "sha256": "6d1b854d021eef9f0f5916ed7f81a70dc8359dae5824f2508c70d29b33732d5c",
+          "summary": {
+            "checks": 8278,
+            "failed": 0,
+            "methods": 8,
+            "sourceRows": 1132,
+            "uniqueInputs": 1132,
+            "freshExecutions": 3396,
+            "helperAssertions": 6888,
+            "metadataMethods": 128,
+            "metadataRows": 53752,
+            "metadataUnique": 53680,
+            "metadataRepeats": 72
+          },
+          "scope": "Root independent peer of exact46 preimages/afterimages; independently frozen1132 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all18 previous scopes;24 fresh Node helper executions replay all8 selected-point components without clinical approval."
+        },
+        "application": {
+          "file": "reports/review-20261003/eight-point-total-source-evidence-application-final26.json",
+          "sha256": "ff192c36cc1774e583fe2b8bcdd2e10b275e774ff633d180534b012cfe5b87e3"
+        },
+        "reviewedBankScope": "Exact weighted integer sum of 81 exhaustive represented caller-selected point/binary tuples for 4ts-trombocitopenia-por-heparina. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "currentBinding": {
+          "source26BankSha256": "2ce7e59ea2ceabc941a1f9584f06fb3abbe6cf202b692647894939c8042608af",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+              "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+              "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+              "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 243,
+      "actualVmExecutions": 243,
+      "implementations": [
+        {
+          "id": "4ts-trombocitopenia-por-heparina",
+          "app": "website",
+          "file": "apps/website/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+          "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+        },
+        {
+          "id": "4ts-trombocitopenia-por-heparina",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+          "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+        },
+        {
+          "id": "4ts-trombocitopenia-por-heparina",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+          "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+        }
+      ],
+      "qualifications": [
+        "Exact weighted integer sum of 81 exhaustive represented caller-selected point/binary tuples for 4ts-trombocitopenia-por-heparina. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "All862 historical fixtures and every field/formula/version/approval unchanged by this candidate. Original source/clinical failures and edition warnings are not overwritten.",
+        "Four inline metadata rows are only a subset of the complete hashed downloadable bank. Independent professional/clinical/rights and full-method approvals are not performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "4 Ts/Lo 2006:4 domínios 0–2, total 0–8; contexto ASH 2018",
+    "implementationVersion": "4ts-trombocitopenia-por-heparina@native-2026-10-03+7a00dad452b7",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/16634744/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Quatro itens, de 0 a 2 pontos cada: T rombocitopenia · T empo · T rombose · ou T ras causas. Máximo: 8.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "trombo",
+            "label": "Trombocitopenia",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Queda &lt; 30% ou nadir &lt; 10.000/µL",
+              "1": "Queda de 30% a 50% ou nadir de 10.000 a 19.000/µL",
+              "2": "Queda &gt; 50% e nadir ≥ 20.000/µL"
+            }
+          },
+          {
+            "key": "tempo",
+            "label": "Tempo da queda das plaquetas",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Queda antes do 4º dia sem exposição recente",
+              "1": "Compatível com 5º–10º dia, mas incerto; após o 10º dia; ou ≤ 1 dia com heparina há 30 a 100 dias",
+              "2": "Início claro entre o 5º e o 10º dia, ou ≤ 1 dia com heparina nos últimos 30 dias"
+            }
+          },
+          {
+            "key": "trombose",
+            "label": "Trombose ou outras sequelas",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma",
+              "1": "Trombose progressiva ou recorrente, lesão de pele não necrótica ou trombose suspeita",
+              "2": "Trombose nova confirmada, necrose de pele ou reação sistêmica após bolus"
+            }
+          },
+          {
+            "key": "outras",
+            "label": "Outras causas de plaquetopenia",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Definida",
+              "1": "Possível",
+              "2": "Nenhuma aparente"
+            }
+          }
+        ],
+        "hash": "2085bbd9c5bb63c518c78b777f3ed0fa679f46419c8b005044092a71c4b44442"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Lo GK et al. Evaluation of pretest clinical score (4 T's) for the diagnosis of heparin-induced thrombocytopenia in two clinical settings. J Thromb Haemost, 2006.",
+          "url": "https://doi.org/10.1111/j.1538-7836.2006.01787.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Evaluation of pretest clinical score (4 T's) for the diagnosis of heparin-induced thrombocytopenia in two clinical settings.",
+            "year": "2006",
+            "firstPublicationDate": "2006-04-01",
+            "doi": "10.1111/j.1538-7836.2006.01787.x",
+            "pmid": "16634744",
+            "journal": "Journal of thrombosis and haemostasis : JTH",
+            "authors": "Lo GK, Juhl D, Warkentin TE, Sigouin CS, Eichler P, Greinacher A."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/16634744/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "80b7788d7386da795a4138bd17ba6a10e00db6edc83eafa597acaa40c472d311",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Cuker A et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv, 2018.",
+          "url": "https://doi.org/10.1182/bloodadvances.2018024489",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia.",
+            "year": "2018",
+            "firstPublicationDate": "2018-11-01",
+            "doi": "10.1182/bloodadvances.2018024489",
+            "pmid": "30482768",
+            "pmcid": "PMC6258919",
+            "journal": "Blood advances",
+            "authors": "Cuker A, Arepally GM, Chong BH, Cines DB, Greinacher A, Gruel Y, Linkins LA, Rodner SB, Selleng S, Warkentin TE, Wex A, Mustafa RA, Morgan RL, Santesso N."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "a13b411957c2d32da4453d06f29111a5f771b92910dccd9562a0fa697927ae8d",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:56:01.165Z",
+        "total": 81,
+        "passed": 81,
+        "sourceRowCount": 81,
+        "uniqueApiInputCount": 81,
+        "sourceContextCount": 81,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "292b0e341c0e4483f06da9bdd9cce95c65fbf381e78fd66ad4fa6082c8b0f156",
+          "total": 81,
+          "bankRowCount": 81,
+          "uniqueApiInputCount": 81,
+          "sourceContextCount": 81,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+              "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+            },
+            {
+              "file": "reports/review-20261003/eight-risk-independent-expectations-final26.json",
+              "sha256": "f5e7d0e09fb4dadaa01dd489cbca1ad3ee8e847771b8409947f3fc43ad7f4a82"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+            "sha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce"
+          },
+          "packagingRequirement": "Copy this score-only complete bank into fresh frozen26 packages only after metadata/source composition and independent peer."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 81,
+          "uniqueApiInputs": 81,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+            "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+          }
+        },
+        "scope": "Exact weighted integer sum of 81 exhaustive represented caller-selected point/binary tuples for 4ts-trombocitopenia-por-heparina. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "sources": [
+          {
+            "id": "4ts-trombocitopenia-por-heparina",
+            "edition": "Lo2006 Table1 main version and HGH/GW footnote differences; not one universal identical table",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1538-7836.2006.01787.x",
+            "doi": "10.1111/j.1538-7836.2006.01787.x",
+            "access": "Original publisher full-text HTML directly opened/read. Main Table1 and footnotes accessible; attempted current journal PDF returned403. No original visual PDF claimed.",
+            "readScope": [
+              "Patients/study design",
+              "Clinical model,Table1 and complete footnotes",
+              "Results/Discussion setting-dependent predictive values"
+            ],
+            "notVerified": [
+              "Raw day/plateletcount classification",
+              "Setting-specific positive predictive value and HIT diagnosis/treatment",
+              "Professional/instrument rights or complete guideline conformity"
+            ],
+            "sourceComponent": "Selected integer point sum only; detailed clinical cohort/band facts remain in the frozen original source review."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+        "evidenceSha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce",
+        "originalEvidence": {
+          "file": "reports/review-20261003/eight-risk-independent-source-check-final26.json",
+          "sha256": "b816fcbdbc88a75d30dba462f1d7a1ecfacb49b3d5487709ee9d1bd470c6d832"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred.",
+          "recordedAt": "2026-10-04T18:58:09.148Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred."
+          },
+          "peer": {
+            "file": "reports/review-20261003/eight-point-total-source-evidence-independent-peer-final26-r2.json",
+            "sha256": "6d1b854d021eef9f0f5916ed7f81a70dc8359dae5824f2508c70d29b33732d5c",
+            "summary": {
+              "checks": 8278,
+              "failed": 0,
+              "methods": 8,
+              "sourceRows": 1132,
+              "uniqueInputs": 1132,
+              "freshExecutions": 3396,
+              "helperAssertions": 6888,
+              "metadataMethods": 128,
+              "metadataRows": 53752,
+              "metadataUnique": 53680,
+              "metadataRepeats": 72
+            },
+            "scope": "Root independent peer of exact46 preimages/afterimages; independently frozen1132 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all18 previous scopes;24 fresh Node helper executions replay all8 selected-point components without clinical approval."
+          },
+          "application": {
+            "file": "reports/review-20261003/eight-point-total-source-evidence-application-final26.json",
+            "sha256": "ff192c36cc1774e583fe2b8bcdd2e10b275e774ff633d180534b012cfe5b87e3"
+          },
+          "reviewedBankScope": "Exact weighted integer sum of 81 exhaustive represented caller-selected point/binary tuples for 4ts-trombocitopenia-por-heparina. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+          "currentBinding": {
+            "source26BankSha256": "2ce7e59ea2ceabc941a1f9584f06fb3abbe6cf202b692647894939c8042608af",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+                "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+                "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+                "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 243,
+        "actualVmExecutions": 243,
+        "implementations": [
+          {
+            "id": "4ts-trombocitopenia-por-heparina",
+            "app": "website",
+            "file": "apps/website/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+            "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+          },
+          {
+            "id": "4ts-trombocitopenia-por-heparina",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+            "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+          },
+          {
+            "id": "4ts-trombocitopenia-por-heparina",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+            "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+          }
+        ],
+        "qualifications": [
+          "Exact weighted integer sum of 81 exhaustive represented caller-selected point/binary tuples for 4ts-trombocitopenia-por-heparina. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+          "All862 historical fixtures and every field/formula/version/approval unchanged by this candidate. Original source/clinical failures and edition warnings are not overwritten.",
+          "Four inline metadata rows are only a subset of the complete hashed downloadable bank. Independent professional/clinical/rights and full-method approvals are not performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+    },
+    "limits": "Estima probabilidade clínica pré-teste em suspeita de HIT após exposição à heparina. Depende da história plaquetária, temporal, trombótica e de causas alternativas. O resultado não confirma HIT; os valores preditivos variaram entre cenários estudados.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.871Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Tabela completa de tempos/percentuais e instruções para dados ausentes não lidas integralmente."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
+    "bytes": 5599,
+    "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "e46036b878ee1c1c658e89296455466b64f8714aabff838ef2d681fefcedb3aa",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "b7323ddfe3a56323fbeb6e3ab4c09f30afbd1b3f0dbe948225a74967e9af714b",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "b7323ddfe3a56323fbeb6e3ab4c09f30afbd1b3f0dbe948225a74967e9af714b",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
