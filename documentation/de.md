@@ -85,3 +85,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Geringe Wahrscheinlichkeit für HIT (0 bis 3 Punkte)
+
+ASH 2018: keine Anti-PF4-Antikörper bestimmen und Heparin fortführen, nach einer anderen Ursache suchen.
+
+
+### 2
+
+Mittlere Wahrscheinlichkeit (4 bis 5 Punkte)
+
+Jegliches Heparin absetzen, einen nicht-heparinischen Antikoagulans in therapeutischer Dosis beginnen und Anti-PF4 bestimmen.
+
+
+### 3
+
+Hohe Wahrscheinlichkeit (6 bis 8 Punkte)
+
+Jegliches Heparin absetzen, einen nicht-heparinischen Antikoagulans in therapeutischer Dosis beginnen und mit Anti-PF4 (und Funktionstest) bestätigen.
+
+
+### 4
+
+Hohe Wahrscheinlichkeit (6 bis 8 Punkte)
+
+Jegliches Heparin absetzen, einen nicht-heparinischen Antikoagulans in therapeutischer Dosis beginnen und mit Anti-PF4 (und Funktionstest) bestätigen.
+

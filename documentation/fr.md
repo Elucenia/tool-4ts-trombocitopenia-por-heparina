@@ -85,3 +85,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Faible probabilité de TIH (0 à 3 points)
+
+ASH 2018 : ne pas doser les anticorps anti-PF4 et maintenir l’héparine, en recherchant une autre cause.
+
+
+### 2
+
+Probabilité intermédiaire (4 à 5 points)
+
+Arrêter toute héparine, instaurer un anticoagulant non héparinique à dose thérapeutique et doser les anti-PF4.
+
+
+### 3
+
+Probabilité élevée (6 à 8 points)
+
+Arrêter toute héparine, instaurer un anticoagulant non héparinique à dose thérapeutique et confirmer par anti-PF4 (et test fonctionnel).
+
+
+### 4
+
+Probabilité élevée (6 à 8 points)
+
+Arrêter toute héparine, instaurer un anticoagulant non héparinique à dose thérapeutique et confirmer par anti-PF4 (et test fonctionnel).
+

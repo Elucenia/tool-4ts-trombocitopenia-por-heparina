@@ -1,0 +1,707 @@
+{
+  "id": "4ts-trombocitopenia-por-heparina",
+  "implementationVersion": "4ts-trombocitopenia-por-heparina@native-2026-10-05+b858aa48659c",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baixa probabilidade de TIH (0 a 3 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "ASH 2018: não dosar anticorpos anti-PF4 e manter a heparina, buscando outra causa.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidade intermediária (4 a 5 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e dosar anti-PF4.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidade (6 a 8 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidade (6 a 8 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low probability of HIT (0 to 3 points)",
+            "locale": "en",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018: do not measure anti-PF4 antibodies and continue heparin, looking for another cause.",
+            "locale": "en",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate probability (4 to 5 points)",
+            "locale": "en",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "Stop all heparin, start a non-heparin anticoagulant at therapeutic dose, and measure anti-PF4.",
+            "locale": "en",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High probability (6 to 8 points)",
+            "locale": "en",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Stop all heparin, start a non-heparin anticoagulant at therapeutic dose, and confirm with anti-PF4 (and functional assay).",
+            "locale": "en",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High probability (6 to 8 points)",
+            "locale": "en",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Stop all heparin, start a non-heparin anticoagulant at therapeutic dose, and confirm with anti-PF4 (and functional assay).",
+            "locale": "en",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baja probabilidad de TIH (0 a 3 puntos)",
+            "locale": "es",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018: no dosar anticuerpos anti-PF4 y mantener la heparina, buscando otra causa.",
+            "locale": "es",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidad intermedia (4 a 5 puntos)",
+            "locale": "es",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "Suspender toda heparina, iniciar anticoagulante no heparínico en dosis terapéutica y dosar anti-PF4.",
+            "locale": "es",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidad (6 a 8 puntos)",
+            "locale": "es",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Suspender toda heparina, iniciar anticoagulante no heparínico en dosis terapéutica y confirmar con anti-PF4 (y ensayo funcional).",
+            "locale": "es",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidad (6 a 8 puntos)",
+            "locale": "es",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Suspender toda heparina, iniciar anticoagulante no heparínico en dosis terapéutica y confirmar con anti-PF4 (y ensayo funcional).",
+            "locale": "es",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faible probabilité de TIH (0 à 3 points)",
+            "locale": "fr",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018 : ne pas doser les anticorps anti-PF4 et maintenir l’héparine, en recherchant une autre cause.",
+            "locale": "fr",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilité intermédiaire (4 à 5 points)",
+            "locale": "fr",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "Arrêter toute héparine, instaurer un anticoagulant non héparinique à dose thérapeutique et doser les anti-PF4.",
+            "locale": "fr",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilité élevée (6 à 8 points)",
+            "locale": "fr",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Arrêter toute héparine, instaurer un anticoagulant non héparinique à dose thérapeutique et confirmer par anti-PF4 (et test fonctionnel).",
+            "locale": "fr",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilité élevée (6 à 8 points)",
+            "locale": "fr",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Arrêter toute héparine, instaurer un anticoagulant non héparinique à dose thérapeutique et confirmer par anti-PF4 (et test fonctionnel).",
+            "locale": "fr",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Geringe Wahrscheinlichkeit für HIT (0 bis 3 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018: keine Anti-PF4-Antikörper bestimmen und Heparin fortführen, nach einer anderen Ursache suchen.",
+            "locale": "de",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittlere Wahrscheinlichkeit (4 bis 5 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "Jegliches Heparin absetzen, einen nicht-heparinischen Antikoagulans in therapeutischer Dosis beginnen und Anti-PF4 bestimmen.",
+            "locale": "de",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohe Wahrscheinlichkeit (6 bis 8 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Jegliches Heparin absetzen, einen nicht-heparinischen Antikoagulans in therapeutischer Dosis beginnen und mit Anti-PF4 (und Funktionstest) bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohe Wahrscheinlichkeit (6 bis 8 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Jegliches Heparin absetzen, einen nicht-heparinischen Antikoagulans in therapeutischer Dosis beginnen und mit Anti-PF4 (und Funktionstest) bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bassa probabilità di HIT (0 a 3 punti)",
+            "locale": "it",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018: non dosare gli anticorpi anti-PF4 e mantenere l’eparina, cercando un’altra causa.",
+            "locale": "it",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilità intermedia (4 a 5 punti)",
+            "locale": "it",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "Sospendere tutta l’eparina, iniziare un anticoagulante non eparinico a dose terapeutica e dosare anti-PF4.",
+            "locale": "it",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilità (6 a 8 punti)",
+            "locale": "it",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Sospendere tutta l’eparina, iniziare un anticoagulante non eparinico a dose terapeutica e confermare con anti-PF4 (e test funzionale).",
+            "locale": "it",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilità (6 a 8 punti)",
+            "locale": "it",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "Sospendere tutta l’eparina, iniziare un anticoagulante non eparinico a dose terapeutica e confermare con anti-PF4 (e test funzionale).",
+            "locale": "it",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال منخفض لـ TIH (0 إلى 3 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018: لا تَقِس الأجسام المضادة anti-PF4 وابقِ على الهيبارين، مع البحث عن سبب آخر.",
+            "locale": "ar",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال متوسط (4 إلى 5 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "أوقف جميع أنواع الهيبارين، وابدأ مضاد تخثر غير هيباريني بجرعة علاجية، وقيِّس anti-PF4.",
+            "locale": "ar",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال مرتفع (6 إلى 8 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "أوقف جميع أنواع الهيبارين، وابدأ مضاد تخثر غير هيباريني بجرعة علاجية، وأكِّد بـ anti-PF4 (واختبار وظيفي).",
+            "locale": "ar",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال مرتفع (6 إلى 8 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "أوقف جميع أنواع الهيبارين، وابدأ مضاد تخثر غير هيباريني بجرعة علاجية، وأكِّد بـ anti-PF4 (واختبار وظيفي).",
+            "locale": "ar",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HIT概率低（0到3分）",
+            "locale": "zh",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018：不检测抗PF4抗体，并继续使用肝素，同时寻找其他原因。",
+            "locale": "zh",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等概率（4到5分）",
+            "locale": "zh",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "停用所有肝素，开始治疗剂量的非肝素类抗凝剂，并检测抗PF4。",
+            "locale": "zh",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高概率（6到8分）",
+            "locale": "zh",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "停用所有肝素，开始治疗剂量的非肝素类抗凝剂，并以抗PF4（及功能性检测）确认。",
+            "locale": "zh",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高概率（6到8分）",
+            "locale": "zh",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "停用所有肝素，开始治疗剂量的非肝素类抗凝剂，并以抗PF4（及功能性检测）确认。",
+            "locale": "zh",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HITの可能性が低い（0～3点）",
+            "locale": "ja",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018：抗PF4抗体は測定せず、ヘパリンを継続し、他の原因を探す。",
+            "locale": "ja",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度の可能性（4～5点）",
+            "locale": "ja",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "すべてのヘパリンを中止し、非ヘパリン系抗凝薬を治療用量で開始し、抗PF4を測定する。",
+            "locale": "ja",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高い可能性（6～8点）",
+            "locale": "ja",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "すべてのヘパリンを中止し、非ヘパリン系抗凝薬を治療用量で開始し、抗PF4（および機能的検査）で確認する。",
+            "locale": "ja",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高い可能性（6～8点）",
+            "locale": "ja",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "すべてのヘパリンを中止し、非ヘパリン系抗凝薬を治療用量で開始し、抗PF4（および機能的検査）で確認する。",
+            "locale": "ja",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HIT की कम संभावना (0 से 3 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-2311e9f765648a8eedcf"
+          },
+          "note": {
+            "text": "ASH 2018: anti-PF4 एंटीबॉडी न मापें और हेपारिन जारी रखें, अन्य कारण की तलाश करें।",
+            "locale": "hi",
+            "template": "documented-authored-44fc75976342295a0f08"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम संभावना (4 से 5 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-a7084973839f0884b32d"
+          },
+          "note": {
+            "text": "सभी हेपारिन बंद करें, चिकित्सीय खुराक में गैर-हेपारिन एंटीकॉगुलेंट शुरू करें, और anti-PF4 मापें।",
+            "locale": "hi",
+            "template": "documented-authored-01f7fd81b3bce8495f0b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च संभावना (6 से 8 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "सभी हेपारिन बंद करें, चिकित्सीय खुराक में गैर-हेपारिन एंटीकॉगुलेंट शुरू करें, और anti-PF4 (और functional assay) से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Corte: 2+2+0+2 = 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च संभावना (6 से 8 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-3da5556eebde058f52af"
+          },
+          "note": {
+            "text": "सभी हेपारिन बंद करें, चिकित्सीय खुराक में गैर-हेपारिन एंटीकॉगुलेंट शुरू करें, और anti-PF4 (और functional assay) से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-daa5120fbcec15e9b8ca"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

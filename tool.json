@@ -295,7 +295,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "4 Ts/Lo 2006:4 domínios 0–2, total 0–8; contexto ASH 2018",
-    "implementationVersion": "4ts-trombocitopenia-por-heparina@native-2026-10-03+7a00dad452b7",
+    "implementationVersion": "4ts-trombocitopenia-por-heparina@native-2026-10-05+b858aa48659c",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/16634744/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -563,7 +563,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+      "implementationHash": "b858aa48659cd660a04d482a37e1ee352a4d8e5d5af48683350c5bc9d2625d1c",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "4ts-trombocitopenia-por-heparina@native-2026-10-03+7a00dad452b7",
+          "previousImplementationHash": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0",
+          "implementationHash": "b858aa48659cd660a04d482a37e1ee352a4d8e5d5af48683350c5bc9d2625d1c",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "2085bbd9c5bb63c518c78b777f3ed0fa679f46419c8b005044092a71c4b44442",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Estima probabilidade clínica pré-teste em suspeita de HIT após exposição à heparina. Depende da história plaquetária, temporal, trombótica e de causas alternativas. O resultado não confirma HIT; os valores preditivos variaram entre cenários estudados.",
     "sourceLimitEvidence": {
@@ -582,20 +610,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
-    "bytes": 5599,
-    "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+    "bytes": 5804,
+    "sha256": "b858aa48659cd660a04d482a37e1ee352a4d8e5d5af48683350c5bc9d2625d1c"
   },
-  "sourceToolSha256": "e46036b878ee1c1c658e89296455466b64f8714aabff838ef2d681fefcedb3aa",
+  "sourceToolSha256": "487bf85b92123e425fe6b17d664e58368741b43d536a4ec8afa8b430384c0806",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "b7323ddfe3a56323fbeb6e3ab4c09f30afbd1b3f0dbe948225a74967e9af714b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "b7323ddfe3a56323fbeb6e3ab4c09f30afbd1b3f0dbe948225a74967e9af714b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

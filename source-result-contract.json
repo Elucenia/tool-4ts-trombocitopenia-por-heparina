@@ -1,0 +1,224 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "4ts-trombocitopenia-por-heparina",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "003d429395fbb91a539a3d0c0a0de0b2414dc632",
+    "oldEngineSha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0",
+    "currentEngineSha256": "b858aa48659cd660a04d482a37e1ee352a4d8e5d5af48683350c5bc9d2625d1c"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Queda de 25% no 2º dia, sepse evidente: 0 ponto",
+      "input": {
+        "trombo": "0",
+        "tempo": "0",
+        "trombose": "0",
+        "outras": "0"
+      },
+      "publicOutput": {
+        "id": "4ts-trombocitopenia-por-heparina",
+        "main": [
+          "0",
+          "de 8"
+        ],
+        "label": "Escore 4T",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 8"
+        ],
+        "label": "Escore 4T",
+        "level": "low",
+        "verdict": "Baixa probabilidade de TIH (0 a 3 pontos)",
+        "note": "ASH 2018: não dosar anticorpos anti-PF4 e manter a heparina, buscando outra causa.",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Corte: queda 40%, dia 7, sem trombose, outra causa possível: 1+2+0+1 = 4",
+      "input": {
+        "trombo": "1",
+        "tempo": "2",
+        "trombose": "0",
+        "outras": "1"
+      },
+      "publicOutput": {
+        "id": "4ts-trombocitopenia-por-heparina",
+        "main": [
+          "4",
+          "de 8"
+        ],
+        "label": "Escore 4T",
+        "raw": {
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "de 8"
+        ],
+        "label": "Escore 4T",
+        "level": "mid",
+        "verdict": "Probabilidade intermediária (4 a 5 pontos)",
+        "note": "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e dosar anti-PF4.",
+        "raw": {
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Queda 60% no dia 8, TVP nova, sem outra causa: 8 pontos",
+      "input": {
+        "trombo": "2",
+        "tempo": "2",
+        "trombose": "2",
+        "outras": "2"
+      },
+      "publicOutput": {
+        "id": "4ts-trombocitopenia-por-heparina",
+        "main": [
+          "8",
+          "de 8"
+        ],
+        "label": "Escore 4T",
+        "raw": {
+          "score": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 8,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "8",
+          "de 8"
+        ],
+        "label": "Escore 4T",
+        "level": "high",
+        "verdict": "Alta probabilidade (6 a 8 pontos)",
+        "note": "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional).",
+        "raw": {
+          "score": 8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Corte: 2+2+0+2 = 6, alta",
+      "input": {
+        "trombo": "2",
+        "tempo": "2",
+        "trombose": "0",
+        "outras": "2"
+      },
+      "publicOutput": {
+        "id": "4ts-trombocitopenia-por-heparina",
+        "main": [
+          "6",
+          "de 8"
+        ],
+        "label": "Escore 4T",
+        "raw": {
+          "score": 6
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 6,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6",
+          "de 8"
+        ],
+        "label": "Escore 4T",
+        "level": "high",
+        "verdict": "Alta probabilidade (6 a 8 pontos)",
+        "note": "Suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica e confirmar com anti-PF4 (e ensaio funcional).",
+        "raw": {
+          "score": 6
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

@@ -85,3 +85,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low probability of HIT (0 to 3 points)
+
+ASH 2018: do not measure anti-PF4 antibodies and continue heparin, looking for another cause.
+
+
+### 2
+
+Intermediate probability (4 to 5 points)
+
+Stop all heparin, start a non-heparin anticoagulant at therapeutic dose, and measure anti-PF4.
+
+
+### 3
+
+High probability (6 to 8 points)
+
+Stop all heparin, start a non-heparin anticoagulant at therapeutic dose, and confirm with anti-PF4 (and functional assay).
+
+
+### 4
+
+High probability (6 to 8 points)
+
+Stop all heparin, start a non-heparin anticoagulant at therapeutic dose, and confirm with anti-PF4 (and functional assay).
+

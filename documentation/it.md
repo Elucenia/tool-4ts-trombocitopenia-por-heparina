@@ -85,3 +85,35 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Bassa probabilità di HIT (0 a 3 punti)
+
+ASH 2018: non dosare gli anticorpi anti-PF4 e mantenere l’eparina, cercando un’altra causa.
+
+
+### 2
+
+Probabilità intermedia (4 a 5 punti)
+
+Sospendere tutta l’eparina, iniziare un anticoagulante non eparinico a dose terapeutica e dosare anti-PF4.
+
+
+### 3
+
+Alta probabilità (6 a 8 punti)
+
+Sospendere tutta l’eparina, iniziare un anticoagulante non eparinico a dose terapeutica e confermare con anti-PF4 (e test funzionale).
+
+
+### 4
+
+Alta probabilità (6 a 8 punti)
+
+Sospendere tutta l’eparina, iniziare un anticoagulante non eparinico a dose terapeutica e confermare con anti-PF4 (e test funzionale).
+

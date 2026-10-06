@@ -1,6 +1,6 @@
 {
   "id": "4ts-trombocitopenia-por-heparina",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5599,
-      "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+      "bytes": 5804,
+      "sha256": "b858aa48659cd660a04d482a37e1ee352a4d8e5d5af48683350c5bc9d2625d1c"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1129,
-      "sha256": "8bac478f751d107c1ea7905885cdd4ab9a4ca72ddbd32bb68fd692eb2888038f"
+      "bytes": 1398,
+      "sha256": "4da4d0d8ea19517506701158388359d2477944ab1d30b5398dfca9bb1e694e8c"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4861,
-      "sha256": "5ce7b4aa8f448c97bfedef54275fbdfcdac23c695c9396a3b0a5faa512b51f74"
+      "bytes": 5967,
+      "sha256": "323e5270b189df0cefd0ab61b3c79385692b2ae233b31013632352a147938287"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3941,
-      "sha256": "fc59e470093db4bd1dc5e94d05d5f6d0b0e83d511e82626f5f6e313a85628468"
+      "bytes": 4871,
+      "sha256": "4f28b7648b696e3df42ccceccbe54ed27e7f8866c2833ce65086ce753717641f"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3452,
-      "sha256": "280cc0e3913f50204fc058584eda391054a8690417fd46d6225e93d7e1e02080"
+      "bytes": 4228,
+      "sha256": "fe47e44de30733f468b3ed49513b367691849c3b3c4ecb434b1bedbd8f9d76c4"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3796,
-      "sha256": "2f2c399f5f0ba6f5cd7fb85169ed87ac2f79c49a1d89c145fefb42227a80c50d"
+      "bytes": 4602,
+      "sha256": "07fbdec291e8be493ec04b167cfdd530e13c177d041e843e30b7d49b4a95a8f7"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3990,
-      "sha256": "ac1c74cc209fe574c97cba41421e8cb189ce5de104f1c0b1f3ed9a3d2c4dc780"
+      "bytes": 4891,
+      "sha256": "697f8f4dddf47ae384e4debbee02eb3b3652dbc9a6c6063781cd750fd19c5edc"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6912,
-      "sha256": "17a0cf1adb9746dc052106ca4e0d39127c740255468260206a97042e8f7b5fd8"
+      "bytes": 8561,
+      "sha256": "0b1c44e9e7cc223a6e1aa9ac1e05e4cb27cc2365411b797bbecca69b44832035"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3727,
-      "sha256": "260f4efd5bbd1c117261b3f41add107a131e3adc77eeb0771cbaa103e2bed3e8"
+      "bytes": 4551,
+      "sha256": "485d61034a12e3b049b148e55ec94df1959df86ea2ac68f7e20caaf40f07809b"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3987,
-      "sha256": "8724c97fae5c0c1735699c788124903e6d33eaa8653a2943520aacd3cea5b2da"
+      "bytes": 4859,
+      "sha256": "4dfddb2f3f0cfc1e5df07e27437aaeb52e89419aa6c9ec6b031012bc0e209615"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3584,
-      "sha256": "9e0af2688199764b41fb8c6deac8b366fb866fd6cbfde40f8f035794455c9b1d"
+      "bytes": 4395,
+      "sha256": "0902c3827196f5527dadab6d27a59df85a2ca7377b0147410886f58fd628ef65"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3160,
-      "sha256": "a0e03b3a48e6685e856b6a157f15b539430b261fa2de610cd29eb9a7c5cc2dee"
+      "bytes": 3810,
+      "sha256": "1a9e0f18e470517191f251319cfcd519bc062080e2e613831b4b1415e5da1879"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 26119,
+      "sha256": "eea1e7aca42df832c1427276fb9009fa8600d5ce0b77b289457bd7d7f2c60ddf"
     },
     {
       "path": "engine/tool-code/4ts-trombocitopenia-por-heparina/calculator.js",
-      "bytes": 5599,
-      "sha256": "7a00dad452b721960e2826a1c559aa540c7ee7879d718cf12c123e894bce74a0"
+      "bytes": 5804,
+      "sha256": "b858aa48659cd660a04d482a37e1ee352a4d8e5d5af48683350c5bc9d2625d1c"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2841,
       "sha256": "cecf4952c6a914684606cfd0e6a72612c9b6102330f1ff9ee6e41f42a3d5a5d3"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12094,
+      "sha256": "d40f30d994e2f7d95199401c733799d414474d999efe0e2d6d3c3d2fa3e709dc"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 49921,
-      "sha256": "1a81d9337ef86aa0177ade52e981a63f4af6e6feac3694bb3dec6c3b70d3ec87"
+      "bytes": 65719,
+      "sha256": "7aad5e6752f422a055781f61755cf4d9a8536b94564961e10240e97e20f58ba5"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 407,
-      "sha256": "a8afe1a58c8cb615f245ff355d2c078cc1555da7225726a8a38aba70ccd48a32"
+      "bytes": 501,
+      "sha256": "0a9451dc2e68a18f975047f7dd1e91e2fb432903b8eed26dca76936fd18ed055"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12094,
-      "sha256": "d40f30d994e2f7d95199401c733799d414474d999efe0e2d6d3c3d2fa3e709dc"
+      "bytes": 6406,
+      "sha256": "0d1b7de094ac27793f79453051cb1d3a4e723bd0c3f9981d7f51892337bb9aaa"
     },
     {
       "path": "README.md",
-      "bytes": 3273,
-      "sha256": "837e3ed9aae54c943c46a1a0f6967dd7e41faa351abf974cf94c86325a02773b"
+      "bytes": 3871,
+      "sha256": "6fbb367568424776548c0255b76f74c7826b17bc847711733c89a4f7f4598581"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 6256,
+      "sha256": "067669bfa4cbd436048b3a7f8ede08d565115e80997e1f32d38e0a08fbf14afa"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1765,
       "sha256": "228f40880b554b4cc4a79f48a62039952a025441be9d64eb2ab066a3e32ca313"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 31370,
-      "sha256": "4c5747aa54beed5fe65d0297a3cf2327fd9e7bf66a2bb2b77ea96aac56169280"
+      "bytes": 32883,
+      "sha256": "e6063901c6d765e7db62fffb642ffefe8c43229595ba71836850e6c01b0a9e49"
     }
   ]
 }

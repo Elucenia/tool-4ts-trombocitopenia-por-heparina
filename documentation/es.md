@@ -85,3 +85,35 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Baja probabilidad de TIH (0 a 3 puntos)
+
+ASH 2018: no dosar anticuerpos anti-PF4 y mantener la heparina, buscando otra causa.
+
+
+### 2
+
+Probabilidad intermedia (4 a 5 puntos)
+
+Suspender toda heparina, iniciar anticoagulante no heparínico en dosis terapéutica y dosar anti-PF4.
+
+
+### 3
+
+Alta probabilidad (6 a 8 puntos)
+
+Suspender toda heparina, iniciar anticoagulante no heparínico en dosis terapéutica y confirmar con anti-PF4 (y ensayo funcional).
+
+
+### 4
+
+Alta probabilidad (6 a 8 puntos)
+
+Suspender toda heparina, iniciar anticoagulante no heparínico en dosis terapéutica y confirmar con anti-PF4 (y ensayo funcional).
+
